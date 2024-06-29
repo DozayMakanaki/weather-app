@@ -235,7 +235,7 @@ export default function Home() {
                 <ForecastWeatherDetail
                   key={i}
                   description={d?.weather[0].description ?? ""}
-                  weatehrIcon={d?.weather[0].icon ?? "01d"}
+                  weatherIcon={d?.weather[0].icon ?? "01d"}
                   date={d ? format(parseISO(d.dt_txt), "dd.MM") : ""}
                   day={d ? format(parseISO(d.dt_txt), "dd.MM") : "EEEE"}
                   feels_like={d?.main.feels_like ?? 0}
